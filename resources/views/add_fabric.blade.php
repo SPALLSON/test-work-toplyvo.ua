@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('main_content')
-@section('title_name') Добавление и редактирование: @endsection
+@section('title_name') Добавление: @endsection
 
 @foreach($lists as $el)
     <div class="d-flex text-muted pt-3">
