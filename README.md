@@ -29,7 +29,9 @@ GitHub
 1. Список препаратов:
    <br><b>API URL:</b> /api/medicine/list
    <br><b>Метод запроса:</b> GET
-   <br><b>JSON(ответ сервера):</b><code>[
+   <br><b>JSON(ответ сервера):</b>
+   <code>Запрос /api/medicine/list/</code>  
+<code>[
    {
    "id": 4,
    "name": "Импаза",
@@ -62,7 +64,7 @@ GitHub
    <br><b>API URL:</b> /api/medicine/list/delete/{id}
    <br><b>Метод запроса:</b> DELETE
    <br><b>JSON(ответ сервера):</b>
-   <code>Запрос /api/medicine/list/4</code>
+   <code>Запрос /api/medicine/list/delete/4</code>
    <br><b>Код ответа HTTP: 204</b>
 
 <mark>
