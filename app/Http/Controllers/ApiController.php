@@ -19,6 +19,6 @@ class ApiController extends Controller
     public function RestApiListDelete(Request $req, ApiListMedicine $id)
     {
         $id->delete();
-        return response()->json('', 202);
+        return response()->json('', 204);
     }
 }
