@@ -1,23 +1,25 @@
 <?php
 
 namespace App\Http\Controllers;
-use DB;
+use App\Models\api;
+use App\Models\fabric;
+use App\Models\medicine;
 use Illuminate\Http\Request;
 
 class DeleteController extends Controller
 {
-    public function medicines($id) {
-        DB::delete('delete from medicines where id = ?',[$id]);
+    public function medicines(Request $req, medicine $id) {
+        $id->delete();
         return redirect('/');
     }
 
-    public function api($id) {
-        DB::delete('delete from apis where id = ?',[$id]);
+    public function api(Request $req, api $id) {
+        $id->delete();
         return redirect('/add_api');
     }
 
-    public function fabric($id) {
-        DB::delete('delete from fabrics where id = ?',[$id]);
+    public function fabric(Request $req, fabric $id) {
+        $id->delete();
         return redirect('/add_fabric');
     }
 }
